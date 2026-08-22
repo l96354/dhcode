@@ -1,0 +1,13 @@
+# 构建中间产物
+plugin/target/
+**/*.class
+
+# 本地真实配置（含密钥占位符以外的真实配置，勿提交）
+web/cs/config.local.php
+*.local.php
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store

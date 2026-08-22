@@ -1,0 +1,25 @@
+name: DHCode
+version: 1.0.0
+main: cc.ysee.dh.DHCode
+api-version: "1.21"
+author: Yian
+description: 兑换码插件（/dh），从你的网站拉取兑换码并发放奖励
+softdepend: [TrMenu, LuckPerms, Vault]
+
+commands:
+  dh:
+    description: 兑换码
+    aliases: [兑换, dhcode]
+    permission: dh.use
+    usage: /dh <兑换码>
+
+permissions:
+  dh.use:
+    description: 使用兑换命令
+    default: true
+  dh.reload:
+    description: 重载本地配置
+    default: op
+  dh.give:
+    description: 管理员代玩家兑换
+    default: op
